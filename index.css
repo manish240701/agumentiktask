@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+/* GLOBAL */
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    background: rgb(33,14,57);
+background: radial-gradient(circle, rgba(33,14,57,1) 0%, rgb(3, 2, 11) 100%);
+}
+
+.button{
+    outline: none;
+    cursor: pointer;
+}
+
+/* NAVBAR */
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-item{
+    padding: 0 15px;
+    color: white;
+}
+
+.menu-button{
+    border: none;
+    padding: 12px 28px;
+    border-radius: 7px;
+    background: rgb(143,85,239);
+    background: linear-gradient(45deg, rgba(143,85,239,1) 0%, rgba(62,5,154,1) 100%);
+    color: white;
+    margin-left: 20px;
+}
+
+
+/*hero section*/
+.hero{
+    display: flex;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+
+.hero-h1{
+    color: white;
+    font-size: 65px;
+    width: 90%;
+    margin-left: 10%;
+}
+
+.violet{
+    color: #753BD2;
+}
+
+.hero-para{
+    color: white;
+    font-size: 20px;
+    font-weight:500;
+    width: 90%;
+    margin-left: 10%;
+}
+
+.hero-subscribe{
+    border: 3px solid #28164c;
+    display: inline-block;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: #1F1040;
+    margin-left: 10%;
+    margin-top: 10px;
+
+}
+
+.hero-input{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding-left: 10px;
+    font-size: 17px;
+    padding-right: 40px;
+    font-weight: 600;
+}
+
+.hero-input::placeholder{
+    color: rgb(184, 174, 174);
+}
+
+.hero-subscribe-button{
+    padding: 10px 23px;
+    border-radius: 10px;
+    border: none;
+    background: rgb(143,85,239);
+    background: linear-gradient(45deg, rgba(143,85,239,1) 0%, rgba(62,5,154,1) 100%);
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+
+/* SERVICES */
+.content-grid{
+    display: flex;
+    justify-content: center;
+    flex-wrap:wrap ;
+    row-gap:50px;
+    margin-top: 150px;
+}
+
+.individual-container{
+    text-align: center;
+    width: 300px;
+    padding: 20px 40px;
+    margin: 20px;
+    color: white;
+    border: 1px solid white ;
+    border-radius: 10px;
+    position: relative;
+}
+
+.service-head{
+    margin-top: 20%;
+    font-size: 20px;
+}
+
+.service-image{
+    position: absolute;
+    bottom:75%;
+    right: 30%;
+    border-radius: 10px;
+    width: 40%;
+}
+
+.service-btn{
+    font-weight: 600;
+    color: rgb(187, 174, 174);
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: 2px solid rgb(167, 162, 162);
+    margin-top: 10px;
+}
+
+.service-btn:hover{
+    border: none;
+}
+
+.sb1:hover{
+    color: white;
+    background: linear-gradient(45deg, rgb(221, 73, 53) 0%, rgb(133, 16, 16) 100%);
+}
+
+.sb2:hover{
+    color: white;
+    background: linear-gradient(45deg, rgb(170, 46, 223) 0%, rgb(99, 8, 109) 100%);
+}
+
+.sb3:hover{
+    color: white;
+    background:linear-gradient(45deg, rgb(53, 221, 75) 0%, rgb(11, 109, 17) 100%);
+}
+
+@media only screen and (max-width: 1200px) {
+    .hero{
+        display: block;
+        text-align: center;
+    }
+
+    .hero-h1,.hero-para{
+        margin-left: 0;
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .hero-subscribe{
+        margin-left: 0;
+    }
+
+    .hero-h1{
+        padding: 10px 0 30px 0;
+        font-size: 40px ;
+    }
+
+    .hero-para{
+        padding: 0px 0 30px 0;
+    }
+
+    .hero-input{
+        padding-right: 0;
+    }
+
+    .hero-image{
+        text-align: center;
+        width: 400px;
+    }
+
+    .menu{
+        justify-content: center;
+        row-gap: 10px;
+        padding: 0;
+    }
+
+    .content-grid{
+        margin-top: 100px;
+    }
+    .service-image{
+        width: 25%;
+        right:38%;
+        bottom: 83%;
+    }
+}
